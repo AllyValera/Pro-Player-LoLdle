@@ -1,0 +1,350 @@
+:root {
+    --empty: #3a3a3c;
+    --right: #538d4e;
+    --wrong: #EF4444;
+}
+
+button { 
+    color: #fff;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #af9767;
+    border-radius: 4px;
+    background: #24323f;
+}
+
+button:hover {
+    background: #35485a;
+    cursor: pointer;
+}
+
+button:disabled,
+button[disabled] {
+    border: 1px solid #747474;
+    background: #151d24;
+    color: #747474;
+}
+
+button:disabled:hover,
+button[disabled]:hover {
+    cursor: default;
+    background: #182129;
+}
+
+body,
+html {
+    color: #fff!important;
+    font-family: Helvetica,Arial;
+}
+
+html {
+    background: url(../images/WallpaperDark.png) no-repeat 50% fixed;
+    background-size: cover;
+    background-color: #000;
+}
+
+body {
+    background-color: transparent!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.which {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 1px #000;
+    color: #f2f2f2;
+}
+
+.which-with-background {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    border: 2px solid #af9767;
+    border-radius: 8px;
+    background: #1e2328;
+    font-size: 1rem;
+    padding: .8rem .2rem;
+    vertical-align: center;
+    align-content: center;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.which-with-background .which-text {
+    font-size: 1.2rem;
+}
+
+.answers {
+    width: 80%;
+}
+
+.answers-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.select__input input {
+    background-size: 25px 25px;
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    color: #495057!important;
+    background-color: transparent;
+    border-style: none;
+    pointer-events: auto;
+    flex: 1 1;
+    margin-top: 0;
+    min-width: 0;
+    position: relative;
+    line-height: 20px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.select * {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Roboto,sans-serif;
+}
+
+.select__input, 
+.select__input input {
+    height: 80%;
+}
+
+.guessbox {
+    display: flex;
+    flex-direction: row;
+    flex: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.guessbox .select__item {
+    background-color: #1e2328;
+    color: #fff!important;
+    padding: 6px 15px!important
+}
+
+.guessbox .select__item:hover {
+    background-color: #292d30!important;
+    color: #fff!important;
+}
+
+.guessbox .select__input {
+    background: url(../images/TextInputBackgroundLeft.png) no-repeat!important;
+    background-size: 100% 70px!important;
+    height: 70px;
+    box-shadow: none!important;
+}
+
+.guessbox .select .select__input input {
+    color: #fff!important;
+    margin-bottom: 7px;
+}
+
+.guessbox .select {
+    height: 70px;
+    width: calc(100% - 102px);
+    padding-bottom: 1.2rem;
+}
+
+.guess-button {
+    margin-left: -1px;
+    width: 102px;
+    height: 70px;
+}
+
+.guess-button:hover {
+    cursor: pointer;
+}
+
+.select__item--selected {
+    background-color: #292d30!important;
+}
+
+.game {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 4px 3px rgba(0,0,0,.3);
+    width: 80%;
+    max-width: 750px;
+}
+
+.container {
+    height: 550px;
+    width: 100%;
+    border-radius: 8px;
+    max-width: 450px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pre-play {
+    color: #979797;
+    font-size: 1.1rem;
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.foot-items {
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    vertical-align: center;
+    align-content: center;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.foot-items div {
+    transition: all .1s ease-in-out;
+    padding-left: 10px;
+}
+
+.foot-items div:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.copyright {
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+
+.copyright:hover {
+    cursor: default;
+}
+
+.popup {
+    border: 2px solid #af9767;
+    border-radius: 8px;
+    background: #1e2328;
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    display: none;
+}
+
+.popup button {
+    display: block;
+    margin: -25px auto 0px -40px;
+    background-color: transparent;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    color: #c5c5c5;
+    cursor: pointer;
+}
+
+.popup p {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.popup a {
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background-color: #0f72e5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+    border-radius: 8px;
+}
+
+.example {
+    width: 350px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rules {
+    color:lightblue !important;
+}
+
+#answers {
+   width: 500px;
+}
+
+.answerRow {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    padding-top: 15px;
+}
+
+.playerName, 
+.hint {
+    height: 80px; 
+    background-color: #6b7280; 
+    border-radius: 4px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playerName {
+    font-weight: bold;
+    width: 700px; 
+}
+
+.hint {
+    width: 400px;
+}
+
+.input {
+    padding-left: 20px;
+}
+
+.descriptor {
+    padding-top: 5px;
+    color: #979797;
+}
+
+.wrong {
+    background-color: var(--wrong);
+}
+
+.right {
+    background-color: var(--right);
+}
+
+.empty {
+    background-color: var(--empty);
+}
+
+.winContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.winText {
+    padding-right: 20px;
+}
+
+.poro:hover {
+    cursor: pointer;
+}

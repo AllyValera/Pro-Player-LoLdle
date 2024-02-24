@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<!-- NOTES: 
+    - BEM (Block Element Modifier) methodology - naming convention for CSS classes
+        - Names are like "block__element--modifier"
+    
+    - Hint fields:
+        - Team
+        - Position
+        - Country of Birth
+        - Age
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Guess the League Of Legends professional player in a Wordle style game with clues!">
+
+        <link rel="icon" href="../images/lolesports.png">
+
+        <link rel="stylesheet" type="text/css" href="style.css" >
+
+        <title>ProPAIN | Ally Valera</title>
+    </head>
+
+    <body>  
+        <div class="container">
+            <img src="../images/LeagueofLegends.png" width="400px">
+
+            <div class="game">
+                <span>
+                    <div class="which-with-background">
+                        <div>
+                            <span class="which-text">Guess the League of Legends pro player!</span>
+                        </div>
+                        
+                        <div class="pre-play"> Click <a href="#" id="rules">here</a> to see rules.</div> 
+                    </div>
+                </span>
+            </div>
+            
+            <div class="answers" id="guesses">
+                <div class="guessbox">
+                    <div class="select">
+                        <div class="select__input-wrap"> 
+                            <div class="select__input"> 
+                                <input placeholder="Type player name..." type="text" autocomplete="new-password" class="input" id="userGuess"> 
+                            </div> 
+                        </div>                   
+                    </div>
+                    
+                    <div onclick="checkGuess()" class="guess-button">
+                        <img src="../images/TextInputBackgroundRight.png" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+
+            <div id="answers">
+                <!-- Answer rows will dynamically be added here -->
+            </div>      
+        </div>
+
+        <!-- Instructions pop up - https://www.youtube.com/watch?v=sEJB7FtBoug -->
+        <div class="popup" id="popup">
+            <h2>How to play:</h2>
+            <p>
+                Guess the League of Legends professional player. <br> <br>
+                Please type the <u><b>EXACT</b></u> name of the player and <u><b>CLICK</b></u> the button.<br>
+                After each guess you will get information about how close you are to the answer:
+            </p>
+
+            <img src="../images/example.png" class="example" width="100%" height="100%">
+            
+            <p>(Note: This version of Pro Player LoLdle only contains LCS players.)</p>
+
+            <h2>GLHF!</h2>
+
+            <h6>This was inspired by loldle.net.</h6>
+
+            <a href="" id="close">Got it!</a>
+        </div>
+
+        <!-- Win pop up -->
+        <div class="popup" id="win">
+            <div class="winContainer">
+                <div class="winText">
+                    <h2>GGWP</h2>
+                    <h3>You won!</h3>
+                    <p>Please click the Poro or reload to try again!</p>
+                    <p>:D</p>
+                </div>
+
+                <div onclick="reset()" class="poro">
+                    <img src="../images/poro.png" width="200px">
+                </div>
+            </div>
+        </div>
+
+        <div class="foot">
+            <div class="foot-items">
+                <div title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/allyvalera/" target="_blank" title="My LinkedIn Account">
+                        <img src="../images/LinkedIn.png" width="60px">
+                    </a>
+                </div>
+                
+                <div title="Github">
+                    <a href="https://github.com/AllyValera" target="_blank" title="My Github Account">
+                        <img src="../images/GithubIcon.png" width="60px">
+                    </a>
+                </div>
+            </div>
+
+            <div class="copyright">Ally Valera — 2024</div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html> 
