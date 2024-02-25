@@ -28,7 +28,7 @@ Welcome to the Pro Player LoLdle Game! This project involves building a simplifi
 ![Gameplay](/images/example.png)
 
 ## Notes
-- This was inspired by [LoLdle](https://loldle.net/) and [OWLEL](https://owlel.zusor.io/)
+- This was inspired by [LoLdle](https://loldle.net/) and [OWLEL](https://owlel.zusor.io/).
 
 ## Usage Disclaimer
 Unauthorized use, reproduction, or distribution of this project, or any part thereof, without the explicit permission of the author is strictly prohibited.
