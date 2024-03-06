@@ -2,12 +2,12 @@
 Welcome to the Pro Player LoLdle Game! This project involves building a simplified guessing game related to professional League of Legends players. Players can interact with the game, and the server handles the game's logic, such as fetching random player data and fetching data for the players from user input.
 
 ## Features
-- **Beautiful Soup** - Utilizes the Beautiful Soup Python package to web scrape information about League of Legends professional players.
-- **Node.js and npm Installation**: Ensures the availability of Node.js and npm for server-side JavaScript development and interacting with the SQLite database. npm is employed as the package manager for managing external libraries and tools.
-- **Express Framework Integration**: Utilizes the Express framework to simplify server-side logic development. Express facilitates tasks such as routing (for fetching player data), middleware support (with CORS), and serving static files (HTML, CSS, JS).
-- **Fetch API Usage for Dynamic Content**: Utilizes the fetch API on the client side to make HTTP GET requests to the /getRandomPlayer and /getSummonerDetails routes on the server. 
-- **CORS Middleware Implementation**: Addresses Cross-Origin Resource Sharing (CORS) issues using the cors middleware. Ensures proper communication between the frontend and backend, especially when hosted on different domains. (In other words, by enabling CORS, we are essentially telling the browser that the frontend code is allowed to make requests to the backend server, even if they are on different ports or domains.) 
-- **SQLite3 Database Interaction**: Incorporates the lightweight SQLite3 database system for storing and retrieving game-related data. The sqlite3 package for Node.js is used to interact with the SQLite3 database, enabling various operations.
+- **Beautiful Soup**: Utilizes the Beautiful Soup Python package to web scrape information about League of Legends professional players.
+- **Node.js and npm**: Ensures the availability of Node.js and npm for server-side JavaScript development and interacting with the SQLite database. npm is employed as the package manager for managing external libraries and tools.
+- **Express Framework**: Utilizes the Express framework to simplify server-side logic development. Express facilitates tasks such as routing (for fetching player data), middleware support (with CORS), and serving static files (HTML, CSS, JS).
+- **Fetch API**: Utilizes the fetch API on the client side to make HTTP GET requests to the /getRandomPlayer and /getSummonerDetails routes on the server. 
+- **CORS Middleware**: Addresses Cross-Origin Resource Sharing (CORS) issues using the cors middleware. Ensures proper communication between the frontend and backend, especially when hosted on different domains. (In other words, by enabling CORS, we are essentially telling the browser that the frontend code is allowed to make requests to the backend server, even if they are on different ports or domains.) 
+- **SQLite3 Database**: Incorporates the lightweight SQLite3 database system for storing and retrieving game-related data. The sqlite3 package for Node.js is used to interact with the SQLite3 database, enabling various operations.
 
 ## Known Limitations
 - **Missing Information**: For some players, the country of birth and birthday slots in the database are set to "N/A". This is either due to missing info on their wiki or extra navigation needed on the wiki to get to their page/information.
