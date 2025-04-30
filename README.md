@@ -1,5 +1,6 @@
 # Pro Player LoLdle 
-* Made in Collaboration with github.com/JohnathanNSilva
+~ Made in Collaboration with github.com/JohnathanNSilva
+
 Welcome to the Pro Player LoLdle Game! This project involves building a simplified guessing game related to professional League of Legends players. Players can interact with the game, and the server handles the game's logic, such as fetching random player data and fetching data for the players from user input.
 
 ## Features
